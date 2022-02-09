@@ -13,7 +13,6 @@ import lombok.Setter;
 public class StudentResponseDTO {
 
     @GraphQLQuery(name = "id")
-    @NotNull
     private Long studentId;
     @GraphQLQuery(name = "studentName")
     private String studentName;
