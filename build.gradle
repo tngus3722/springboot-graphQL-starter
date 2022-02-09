@@ -1,0 +1,44 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.0'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'com.musinsa'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// Lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	// jpa
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// hibernate validator
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	// h2 db
+	implementation 'com.h2database:h2'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	// Mapstruct
+	implementation 'org.mapstruct:mapstruct:1.4.1.Final'
+	annotationProcessor "org.mapstruct:mapstruct-processor:1.4.1.Final"
+	testImplementation 'org.mapstruct:mapstruct:1.4.1.Final'
+	testAnnotationProcessor "org.mapstruct:mapstruct-processor:1.4.1.Final"
+	// flyway
+	implementation 'org.flywaydb:flyway-core:8.2.2'
+
+	// graphQL
+	implementation group: 'io.leangen.graphql', name: 'graphql-spqr-spring-boot-starter', version: '0.0.6'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
