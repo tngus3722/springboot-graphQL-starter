@@ -7,8 +7,8 @@
 
 ## 1. git clone
 ```
-git clone https://github.com/tngus3722/GraphQL_RESEARCH.git
-cd GraphQL_RESEARCH
+git clone https://github.com/tngus3722/SpringBoot-graphQL-starter.git
+cd SpringBoot-graphQL-starter.git
 ```
 
 ## 2. build jar
