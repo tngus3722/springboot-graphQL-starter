@@ -1,4 +1,3 @@
-#### GraphQL_Researcg 
 
 # Getting Started
 
