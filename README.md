@@ -1,4 +1,3 @@
-#### GraphQL_Researcg 
 
 # Getting Started
 
@@ -7,8 +6,8 @@
 
 ## 1. git clone
 ```
-git clone https://github.com/tngus3722/GraphQL_RESEARCH.git
-cd GraphQL_RESEARCH
+git clone https://github.com/tngus3722/springboot-graphQL-starter.git
+cd springboot-graphQL-starter.git
 ```
 
 ## 2. build jar
